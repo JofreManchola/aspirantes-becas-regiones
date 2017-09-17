@@ -1,13 +1,21 @@
-## ASPIRANTES A BECAS DE FORMACION DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016
+## ASPIRANTES A BECAS DE FORMACIóN DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016
 
 
-Se han utilizado los datos de [ASPIRANTES A BECAS DE FORMACION DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey) disponibles en el (portal de datos abiertos de Colombia)[https://www.datos.gov.co], el objetivo es trabajar sobre este dataset y presentar información relevante.
+Se han utilizado los datos de [ASPIRANTES A BECAS DE FORMACION DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey) disponibles en el [portal de datos abiertos de Colombia](https://www.datos.gov.co), el objetivo es trabajar sobre este dataset y presentar información relevante.
 
-Este dataset presenta *información sobre profesionales inscritos en las diferentes convocatorias de formación de recurso humano de alto nivel para fortalecer capacidades en Ciencia, Tecnología e Innovación en las regiones años 2014 a octubre de 2016.*
+Este dataset presenta *"información sobre profesionales inscritos en las diferentes convocatorias de formación de recurso humano de alto nivel para fortalecer capacidades en Ciencia, Tecnología e Innovación en las regiones años 2014 a octubre de 2016". Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)*
 
-### Markdown
+### Insights
+
+- Convocatorias por año: En el 2014 hubo más convocatorias
+- Departamento oferta: Solo han repetido 3 departamentos: Atlántico, Magdalena y Cesar
+- Los programas nacionales son más apetecidos que los programas internacionales
+- La participación de aspirantes por programa no depende del género
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+![imagen test](assets/img/aspirante-depto-anho.png)
+![imagen test](assets/img/aspirante-modalidad-anho.png)
 
 ```markdown
 Syntax highlighted code block
