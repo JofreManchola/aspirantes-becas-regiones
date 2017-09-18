@@ -22,6 +22,11 @@ Este dataset presenta 6050 registros con *"información sobre profesionales insc
 
 Las anteriores conclusiones se soportan en las siguientes gráficas.
 
+<div id="aspirante-depto-anho"></div>
+<script src="assets/js/scatterPlot.js"></script>
+<!-- <script async src="//jsfiddle.net/jamancholam/jynqzezs/embed/result,js/"></script> -->
+
+
 ![imagen test](assets/img/aspirante-depto-anho.png)
 ![imagen test](assets/img/modalidad-anho.png)
 ![imagen test](assets/img/aspirante-modalidad-anho.png)
