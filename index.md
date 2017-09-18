@@ -1,4 +1,4 @@
-## ASPIRANTES A BECAS DE FORMACIóN DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016
+## ASPIRANTES A BECAS DE FORMACIÓN DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016
 
 Con el fin de identificar el grado de participación de aspirantes en la oferta de becas de formación de algo nivel para las regiones, se ha analizado _[este](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)_  conjunto de datos que disponible se encuentra disponible en el [portal de datos abiertos de Colombia](https://www.datos.gov.co), el objetivo es identificar comportamientos interesantes y visualizarlos de manera adecuada.
 
