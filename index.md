@@ -1,23 +1,33 @@
 ## ASPIRANTES A BECAS DE FORMACIóN DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016
 
+Con el fin de identificar el grado de participación de aspirantes en la oferta de becas de formación de algo nivel para las regiones, se ha analizado _[este](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)_  conjunto de datos que disponible se encuentra disponible en el [portal de datos abiertos de Colombia](https://www.datos.gov.co), el objetivo es identificar comportamientos interesantes y visualizarlos de manera adecuada.
 
-Se han utilizado los datos de [ASPIRANTES A BECAS DE FORMACION DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey) disponibles en el [portal de datos abiertos de Colombia](https://www.datos.gov.co), el objetivo es trabajar sobre este dataset y presentar información relevante.
-
-Este dataset presenta *"información sobre profesionales inscritos en las diferentes convocatorias de formación de recurso humano de alto nivel para fortalecer capacidades en Ciencia, Tecnología e Innovación en las regiones años 2014 a octubre de 2016". Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)*
+Este dataset presenta 6050 registros con *"información sobre profesionales inscritos en las diferentes convocatorias de formación de recurso humano de alto nivel para fortalecer capacidades en Ciencia, Tecnología e Innovación en las regiones años 2014 a octubre de 2016". Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)*
 
 ### Insights
 
-- Convocatorias por año: En el 2014 hubo más convocatorias
-- Departamento oferta: Solo han repetido 3 departamentos: Atlántico, Magdalena y Cesar
-- Los programas nacionales son más apetecidos que los programas internacionales
-- La participación de aspirantes por programa no depende del género
+- En el 2014 presentaron más aspirantes a las convocatorias.
+- Solamente tres departamentos (Atlántico, Magdalena y Cesar) han sido escogidos más de una vez como lugar de convocatoria.
+- El hecho de que en 2015 solamente se realizara oferta en cuatro (4) departamentos, afectó la cantidad de aspirantes.
+- Los programas nacionales son más apetecidos que los programas en el exterior.
+- Los aspirantes están más interesados en la oferta de maestrías que en la oferta de doctorados.
+- La participación de genero en términos de la modalidad de la convocatoria es similar y relativamente equitativa en todos los casos, siendo aproximadamente 55% para hombres y 45% para mujeres.
+- El género influye en la edad preferida para realizar estudios de alto nivel, se evidencia que las mujeres prefieren estudiar más jovenes.
+- En el caso de las investigaciones el genero no afecta la edad promedio de los aspirantes aunque se evidencia que las mujeres tienen interés de investigar en edad más avanzada que los hombres.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### visualizaciones
+
+Las anteriores conclusiones se soportan en las siguientes gráficas.
 
 ![imagen test](assets/img/aspirante-depto-anho.png)
+![imagen test](assets/img/modalidad-anho.png)
 ![imagen test](assets/img/aspirante-modalidad-anho.png)
+![imagen test](assets/img/genero-modalidad-barchart.png)
+![imagen test](assets/img/genero-modalidad-piechart.png)
+![imagen test](assets/img/distribucion-edad.png)
 
-```markdown
+
+<!-- ```markdown
 Syntax highlighted code block
 
 # Header 1
@@ -33,14 +43,8 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
+``` -->
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<!-- For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). -->
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JofreManchola/aspirantes-becas-regiones/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
