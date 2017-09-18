@@ -6,12 +6,12 @@ Este dataset presenta 6050 registros con *"información sobre profesionales insc
 
 ### Insights
 
-- En el 2014 presentaron más aspirantes a las convocatorias.
-- Solamente tres departamentos (Atlántico, Magdalena y Cesar) han sido escogidos más de una vez como lugar de convocatoria.
-- El hecho de que en 2015 solamente se realizara oferta en cuatro (4) departamentos, afectó la cantidad de aspirantes.
-- Los programas nacionales son más apetecidos que los programas en el exterior.
+- En el año 2014 se presentaron un mayor número de aspirantes a las convocatorias en comparación a los años 2015 y 2016.
+- En el 2015 el número de aspirantes fue menor dada la disminución en programas ofertados, solo se ofertaron en 4 departamentos.
+- Los departamento de Atlántico, Magdalena y Cesar han sido escogidos más de una vez como lugar de convocatoria.
+- Los programas nacionales tienen mayor demanda que los programas en el exterior.
 - Los aspirantes están más interesados en la oferta de maestrías que en la oferta de doctorados.
-- La participación de genero en términos de la modalidad de la convocatoria es similar y relativamente equitativa en todos los casos, siendo aproximadamente 55% para hombres y 45% para mujeres.
+- Se mantiene una proporción de participación aproximadamente de 55% para hombres y 45% para mujeres en todas las convocatoria, sin importar la modalidad de esta.
 - El género influye en la edad preferida para realizar estudios de alto nivel, se evidencia que las mujeres prefieren estudiar más jovenes.
 - En el caso de las investigaciones el genero no afecta la edad promedio de los aspirantes aunque se evidencia que las mujeres tienen interés de investigar en edad más avanzada que los hombres.
 
