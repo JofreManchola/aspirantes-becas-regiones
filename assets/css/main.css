@@ -1,3 +1,72 @@
+#aspirante-depto-anho{
+    width: 100%;
+}
 p{
     text-align: justify;
+}
+.toolTip {
+    pointer-events: none;
+    position: absolute;
+    min-width: 50px;
+    height: auto;
+    background: none repeat scroll 0 0 rgb(248, 248, 255);
+    padding: 9px 14px 6px 14px;
+    border-radius: 5px;
+    text-align: left;  
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+    font-size: 10pt;
+}
+.axis{
+    font-size: 12px;
+    font-family:sans-serif;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.tick{
+    /* fill: blue;
+    stroke: green; */
+}
+.gXaxis{
+    /* fill: pink;
+    stroke: purple; */
+}
+.chartTitle{
+    fill:#333;
+    font-size:18px;
+    font-family:sans-serif;
+}
+.axis_title{
+    fill:#555;
+    font-size:14px;
+    font-family:sans-serif;
+}
+.axis_label{
+    fill:#888;
+}
+
+svg{
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+g{
+    /* stroke:red; */
+    /* fill: blue; */
+}
+path{
+    /* stroke:yellow;
+    fill: cyan; */
+}
+.svgScatterPlot{
+
+}
+.point {
+    /* fill: steelblue;
+    stroke: #000; */
+}
+.legend{
+    font-size: 12px;
 }

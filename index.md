@@ -27,7 +27,7 @@ Las anteriores conclusiones se soportan en las siguientes gráficas.
 <!-- <script async src="//jsfiddle.net/jamancholam/jynqzezs/embed/result,js/"></script> -->
 
 
-![imagen test](assets/img/aspirante-depto-anho.png)
+<!-- ![imagen test](assets/img/aspirante-depto-anho.png) -->
 ![imagen test](assets/img/modalidad-anho.png)
 ![imagen test](assets/img/aspirante-modalidad-anho.png)
 ![imagen test](assets/img/genero-modalidad-barchart.png)

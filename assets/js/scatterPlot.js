@@ -6,6 +6,8 @@ data = [];
 dataScatterPlot = [];
 x = {};
 y = {};
+colorScale10 = d3.scaleOrdinal(d3.schemeCategory10);
+var r = 5
 
 var dataDom = d3.select("#dataDom");
 var getData = function (d) { return d; }
@@ -25,80 +27,145 @@ var summarizeScatterPlot = function (dd) {
 }
 
 // set the dimensions and margins of the graph
-var margin = { top: 20, right: 20, bottom: 100, left: 50 },
-    fullWidth = 400,
-    fullHeight = 400,
+var fullWidth = 600,
+    fullHeight = 500,
+    margin = { top: 60, right: 20, bottom: 150, left: 100 },
     width = fullWidth - margin.left - margin.right,
     height = fullHeight - margin.top - margin.bottom;
 
-// append the svg obgect to the body of the page
-// appends a 'group' element to 'svg'
-// moves the 'group' element to the top left margin
-var svg = d3.select("#aspirante-depto-anho").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform",
-    "translate(" + margin.left + "," + margin.top + ")");
 
 
 
 
 makeScatterPlot = function (dx) {
+    var svg = d3.select("#aspirante-depto-anho").append("svg")
+        .attr("width", fullWidth)
+        .attr("height", fullHeight)
+        .attr("class", "svgScatterPlot")
+        .append("g")
+        .attr("width", width)
+        .attr("height", height)
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    // set the ranges
+    dx.sort(function (a, b) { return d3.descending(a.count, b.count); });
+
     x = d3.scaleBand()
-        .domain(dx.map(function (entry) {
-            return entry['Departamento Oferta'];
-        }))
-        .rangeRound([0, height])
-        .padding(0.1);
+        // .domain(dx.map(function (entry) {
+        //     return entry['Departamento Oferta'];
+        // }))
+        .domain(getDepartamentos(dx))
+        .rangeRound([0, width]);
     y = d3.scaleLinear().range([height, 0]);
 
-    // define the line
-    var valueline = d3.line()
-        .x(function (d) { return x(d['Departamento Oferta']); })
-        .y(function (d) { return y(d.count); });
-
-    var xDomain = dataScatterPlot.reduce(function (valorAnterior, valorActual, indice, vector) {
-        // console.log("valorAnterior", valorAnterior);
-        // console.log("valorActual", valorActual['Departamento Oferta']);
-        valorAnterior.push(valorActual['Departamento Oferta']);
-        return valorAnterior;
-    }, [])
-
-    // Scale the range of the data
-    x.domain(xDomain);
-    // x.domain(d3.extent(dx, function (d) { return d['Departamento Oferta']; }));
-    y.domain([0, d3.max(dx, function (d) { return d.count; })]);
-
-    // // Add the valueline path.
-    // svg.append("path")
-    //     .data([dx])
-    //     .attr("class", "line")
-    //     .attr("d", valueline);
+    y.domain([0, d3.max(dx, function (d) { return d.count; }) * 1.1]);
 
     // Add the scatterplot
     svg.selectAll("dot")
         .data(dx)
         .enter().append("circle")
-        .attr("r", 5)
+        .attr("r", r)
         .attr("cx", function (d) { return x(d['Departamento Oferta']); })
-        .attr("cy", function (d) { return y(d.count); });
+        .attr("cy", function (d) { return y(d.count); })
+        .style("fill", function (d, i) { return colorScale10(d['Ano Convo']); })
+        .on("mousemove", onMouseover)
+        .on("mouseout", onMouseout);
 
     // Add the X Axis
     svg.append("g")
+        .attr("class", "gXaxis")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x))
         .selectAll("text")
-        .attr("transform", "rotate(-90)")
-        .attr("text-anchor", "end");
+        .attr("transform", "translate(-30,20) rotate(-90)")
+        .attr("text-anchor", "end")
+        .attr("class", "axis_label");
 
     // Add the Y Axis
-    svg.append("g")
+    var yaxis = svg.append("g")
         .call(d3.axisLeft(y));
+    yaxis.selectAll("text")
+        .attr("class", "axis_label");
+    yaxis.append("text")
+        .text("Cantidad de aspirantes")
+        .attr("transform", "translate(" + (-margin.left / 2) + "," + height / 2 + ") rotate(-90)")
+        .attr("text-anchor", "middle")
+        .attr("class", "axis_title");
+
+    //Creación del título de la gráfica
+    svg.append("text")
+        .attr("class", "chartTitle")
+        .attr("transform", "translate(" + width / 2 + "," + (-margin.top / 2) + ")")
+        .text("Aspirantes a ofertas departamentales por año")
+        .attr("text-anchor", "middle");
+    //.attr("y", heightScale2(heightScale2.ticks().pop()) + 0.5)
+
+    makeLegend(svg, dx);
 }
 
+var tooltip = d3.select("body").append("div").attr("class", "toolTip");
+var onMouseover = function (d) {
+    tooltip
+        .style("left", d3.event.pageX + 50 + "px")
+        .style("top", d3.event.pageY - 50 + "px")
+        .style("display", "inline-block")
+        .html("<strong>Departamento:</strong> " + d['Departamento Oferta'] + "<br>" +
+        "<strong>Año:</strong> " + d3.format(",d")(d['Ano Convo']) + "<br>" +
+        "<strong>Cantidad de aspirantes:</strong> " + d3.format(",d")(d.count));
+};
+
+var onMouseout = function (d) {
+    tooltip.style("display", "none"); // don't care about position!
+};
+
+var makeTooltip = function (d) {
+
+}
+
+var getAnhos = function (dx) {
+    var anhos = [];
+    dx.map(function (d) {
+        if (!anhos.find(function (k) { return d['Ano Convo'] == k; })) {
+            anhos.push(d['Ano Convo']);
+        }
+    })
+    anhos.sort(function (a, b) { return d3.ascending(a, b); })
+    return anhos;
+}
+
+var getDepartamentos = function (dx) {
+    var departamentos = [];
+    dx.map(function (d) {
+        if (!departamentos.find(function (k) { return d['Departamento Oferta'] == k; })) {
+            departamentos.push(d['Departamento Oferta']);
+        }
+    })
+    // departamentos.sort(function (a, b) { return d3.ascending(a, b); })
+    return departamentos;
+}
+
+
+var makeLegend = function (svg, dx) {
+    // dx['Ano Convo']
+    var legend = svg.append("g")
+        .attr("class", "legend")
+        .attr("text-anchor", "end")
+        .selectAll("g")
+        .data(getAnhos(dx).slice().reverse())
+        .enter().append("g")
+        .attr("transform", function (d, i) { return "translate(-110," + i * 20 + ")"; });
+
+    legend.append("rect")
+        .attr("x", fullWidth - 20)
+        .attr("width", 19)
+        .attr("height", 19)
+        .attr("fill", colorScale10);
+
+    legend.append("text")
+        .attr("x", fullWidth - 25)
+        .attr("y", 9.5)
+        .attr("dy", "0.32em")
+        .text(function (d) { return d; });
+}
 
 
 
