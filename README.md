@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script> 
 
-You can use the [editor on GitHub](https://github.com/JofreManchola/aspirantes-becas-regiones/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## ASPIRANTES A BECAS DE FORMACIÓN DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Con el fin de identificar el grado de participación de aspirantes en la oferta de becas de formación de alto nivel para las regiones, se ha analizado _[este](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)_  conjunto de datos que se encuentra disponible en el [portal de datos abiertos de Colombia](https://www.datos.gov.co), el objetivo es identificar comportamientos interesantes y visualizarlos de manera adecuada.
 
-### Markdown
+Este dataset presenta 6050 registros con...
+>"información sobre profesionales inscritos en las diferentes convocatorias de formación de recurso humano de alto nivel para fortalecer capacidades en Ciencia, Tecnología e Innovación en las regiones años 2014 a octubre de 2016".
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)
 
-```markdown
-Syntax highlighted code block
+### Insights
 
-# Header 1
-## Header 2
-### Header 3
+- En el año 2014 se presentó un mayor número de aspirantes a las convocatorias en comparación a los años 2015 y 2016.
+- En el 2015 el número de aspirantes fue menor dada la disminución en programas ofertados, solo se ofertaron en 4 departamentos.
+- Los departamento de Atlántico, Magdalena y Cesar han sido escogidos más de una vez como lugar de convocatoria.
+- Los programas nacionales tienen mayor demanda que los programas en el exterior.
+- Los aspirantes están más interesados en la oferta de maestrías que en la oferta de doctorados.
+- Se mantiene una proporción de participación aproximadamente de 55% para hombres y 45% para mujeres en todas las convocatorias, sin importar la modalidad de esta.
+- El género influye en la edad preferida para realizar estudios de alto nivel, se evidencia que las mujeres prefieren estudiar más jovenes.
+- En el caso de las investigaciones, el genero no afecta la edad promedio de los aspirantes aunque se evidencia que las mujeres tienen interés de investigar en edad más avanzada que los hombres.
 
-- Bulleted
-- List
+### Visualizaciones
 
-1. Numbered
-2. List
+Las anteriores conclusiones se soportan en las siguientes gráficas.
 
-**Bold** and _Italic_ and `Code` text
+<div id="aspirante-depto-anho"></div>
+<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
 
-[Link](url) and ![Image](src)
-```
+<div id="aspirante-modalidad-genero"></div>
+<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+<script src="assets/js/scatterPlot.js"></script>
+<!-- <script async src="//jsfiddle.net/jamancholam/jynqzezs/embed/result,js/"></script> -->
 
-### Jekyll Themes
+<!-- ![imagen test](assets/img/aspirante-depto-anho.png) -->
+![imagen test](assets/img/modalidad-anho.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JofreManchola/aspirantes-becas-regiones/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<!-- ![imagen test](assets/img/aspirante-modalidad-genero.png) -->
+![imagen test](assets/img/genero-modalidad-barchart.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
 
-### Support or Contact
+![imagen test](assets/img/genero-modalidad-piechart.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![imagen test](assets/img/distribucion-edad.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
+
