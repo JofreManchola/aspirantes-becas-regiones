@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script> 
 
 ## ASPIRANTES A BECAS DE FORMACIÓN DE ALTO NIVEL PARA LAS REGIONES 2014 A OCT 2016
 
@@ -20,31 +18,3 @@ Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-
 - Se mantiene una proporción de participación aproximadamente de 55% para hombres y 45% para mujeres en todas las convocatorias, sin importar la modalidad de esta.
 - El género influye en la edad preferida para realizar estudios de alto nivel, se evidencia que las mujeres prefieren estudiar más jovenes.
 - En el caso de las investigaciones, el genero no afecta la edad promedio de los aspirantes aunque se evidencia que las mujeres tienen interés de investigar en edad más avanzada que los hombres.
-
-### Visualizaciones
-
-Las anteriores conclusiones se soportan en las siguientes gráficas.
-
-<div id="aspirante-depto-anho"></div>
-<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
-
-<div id="aspirante-modalidad-genero"></div>
-<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
-
-<script src="assets/js/scatterPlot.js"></script>
-<!-- <script async src="//jsfiddle.net/jamancholam/jynqzezs/embed/result,js/"></script> -->
-
-<!-- ![imagen test](assets/img/aspirante-depto-anho.png) -->
-![imagen test](assets/img/modalidad-anho.png "Imagen tomada en Tableau")
-<footer class="imagetitle">Imagen tomada en Tableau</footer>
-
-<!-- ![imagen test](assets/img/aspirante-modalidad-genero.png) -->
-![imagen test](assets/img/genero-modalidad-barchart.png "Imagen tomada en Tableau")
-<footer class="imagetitle">Imagen tomada en Tableau</footer>
-
-![imagen test](assets/img/genero-modalidad-piechart.png "Imagen tomada en Tableau")
-<footer class="imagetitle">Imagen tomada en Tableau</footer>
-
-![imagen test](assets/img/distribucion-edad.png "Imagen tomada en Tableau")
-<footer class="imagetitle">Imagen tomada en Tableau</footer>
-
