@@ -18,18 +18,19 @@ Este dataset presenta 6050 registros con *"información sobre profesionales insc
 - El género influye en la edad preferida para realizar estudios de alto nivel, se evidencia que las mujeres prefieren estudiar más jovenes.
 - En el caso de las investigaciones, el genero no afecta la edad promedio de los aspirantes aunque se evidencia que las mujeres tienen interés de investigar en edad más avanzada que los hombres.
 
-### visualizaciones
+### Visualizaciones
 
 Las anteriores conclusiones se soportan en las siguientes gráficas.
 
 <div id="aspirante-depto-anho"></div>
+<div id="aspirante-modalidad-genero"></div>
 <script src="assets/js/scatterPlot.js"></script>
 <!-- <script async src="//jsfiddle.net/jamancholam/jynqzezs/embed/result,js/"></script> -->
 
 
 <!-- ![imagen test](assets/img/aspirante-depto-anho.png) -->
 ![imagen test](assets/img/modalidad-anho.png)
-![imagen test](assets/img/aspirante-modalidad-anho.png)
+<!-- ![imagen test](assets/img/aspirante-modalidad-genero.png) -->
 ![imagen test](assets/img/genero-modalidad-barchart.png)
 ![imagen test](assets/img/genero-modalidad-piechart.png)
 ![imagen test](assets/img/distribucion-edad.png)

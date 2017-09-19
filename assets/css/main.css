@@ -1,4 +1,4 @@
-#aspirante-depto-anho{
+#aspirante-depto-anho, #aspirante-modalidad-genero{
     width: 100%;
 }
 p{
@@ -69,4 +69,14 @@ path{
 }
 .legend{
     font-size: 12px;
+}
+.tooltipvalue{
+    font-weight: bolder;
+    padding-left: 5px;
+}
+.tooltiplabel{
+    text-transform: capitalize;
+}
+.elemento:hover {
+    fill: green;
 }
