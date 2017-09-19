@@ -18,7 +18,7 @@ var summarizeScatterPlot = function (dd) {
             var t1 = d3.sum(d, function (g) { return 1; });
             var t2 = d[0]['Ano Convo'];
             var t3 = d[0]['Departamento Oferta'];
-            return { 'count': t1, 'Ano Convo': t2, 'Departamento Oferta': t3 }
+            return { 'count': t1, 'año': t2, 'Departamento Oferta': t3 }
         }).entries(dd);
 
     return temp.map(function (datum, index, arr) {
@@ -92,7 +92,7 @@ makeScatterPlot = function (dx) {
         .attr("r", r)
         .attr("cx", function (d) { return x(d['Departamento Oferta']); })
         .attr("cy", function (d) { return y(d.count); })
-        .style("fill", function (d, i) { return colorScale10(d['Ano Convo']); })
+        .style("fill", function (d, i) { return colorScale10(d['año']); })
         .on("mousemove", onMouseover)
         .on("mouseout", onMouseout);
 
@@ -126,7 +126,7 @@ makeScatterPlot = function (dx) {
     //.attr("y", heightScale2(heightScale2.ticks().pop()) + 0.5)
 
     // makeLegend(svg, dx);
-    makeLegend(svg, dx, 'Ano Convo', colorScale10);
+    makeLegend(svg, dx, 'año', colorScale10);
 }
 
 /**
@@ -300,7 +300,7 @@ var makeLegend2 = function (svg, labels, colorScale) {
 d3.tsv(dataSet,
     // Row
     function row(d) {
-        d.keyScatterPlot = d['Ano Convo'] + d['Departamento Oferta'];
+        d.keyScatterPlot = d['año'] + d['Departamento Oferta'];
         d.keyStackedbar = d['Genero Aspirante'] + d['Modalidad'];
         return d;
     },

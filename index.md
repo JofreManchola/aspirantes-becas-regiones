@@ -5,7 +5,10 @@
 
 Con el fin de identificar el grado de participación de aspirantes en la oferta de becas de formación de algo nivel para las regiones, se ha analizado _[este](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)_  conjunto de datos que disponible se encuentra disponible en el [portal de datos abiertos de Colombia](https://www.datos.gov.co), el objetivo es identificar comportamientos interesantes y visualizarlos de manera adecuada.
 
-Este dataset presenta 6050 registros con *"información sobre profesionales inscritos en las diferentes convocatorias de formación de recurso humano de alto nivel para fortalecer capacidades en Ciencia, Tecnología e Innovación en las regiones años 2014 a octubre de 2016". Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)*
+Este dataset presenta 6050 registros con...
+>"información sobre profesionales inscritos en las diferentes convocatorias de formación de recurso humano de alto nivel para fortalecer capacidades en Ciencia, Tecnología e Innovación en las regiones años 2014 a octubre de 2016".
+
+Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/ASPIRANTES-A-BECAS-DE-FORMACION-DE-ALTO-NIVEL-PARA/j6gt-keey)
 
 ### Insights
 
@@ -23,17 +26,27 @@ Este dataset presenta 6050 registros con *"información sobre profesionales insc
 Las anteriores conclusiones se soportan en las siguientes gráficas.
 
 <div id="aspirante-depto-anho"></div>
+<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
+
 <div id="aspirante-modalidad-genero"></div>
+<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
+
 <script src="assets/js/scatterPlot.js"></script>
 <!-- <script async src="//jsfiddle.net/jamancholam/jynqzezs/embed/result,js/"></script> -->
 
-
 <!-- ![imagen test](assets/img/aspirante-depto-anho.png) -->
-![imagen test](assets/img/modalidad-anho.png)
+![imagen test](assets/img/modalidad-anho.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
+
 <!-- ![imagen test](assets/img/aspirante-modalidad-genero.png) -->
-![imagen test](assets/img/genero-modalidad-barchart.png)
-![imagen test](assets/img/genero-modalidad-piechart.png)
-![imagen test](assets/img/distribucion-edad.png)
+![imagen test](assets/img/genero-modalidad-barchart.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
+
+![imagen test](assets/img/genero-modalidad-piechart.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
+
+![imagen test](assets/img/distribucion-edad.png "Imagen tomada en Tableau")
+<footer class="imagetitle">Imagen tomada en Tableau</footer>
 
 
 <!-- ```markdown
@@ -55,5 +68,4 @@ Syntax highlighted code block
 ``` -->
 
 <!-- For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/). -->
-
 

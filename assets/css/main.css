@@ -4,6 +4,25 @@
 p{
     text-align: justify;
 }
+a{
+    clear: both;
+    color: black;
+    font-weight: normal;
+}
+a:hover{
+    clear: both;
+    color: black;
+    font-weight: normal;
+}
+a:visited{
+    clear: both;
+    color: blue;
+    font-weight: normal;
+}
+footer.imagetitle{
+    font-size: 11px;
+    margin-bottom: 20px;
+}
 .toolTip {
     pointer-events: none;
     position: absolute;
