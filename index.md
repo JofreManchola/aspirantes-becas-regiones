@@ -26,10 +26,10 @@ Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-
 Las anteriores conclusiones se soportan en las siguientes gráficas.
 
 <div id="aspirante-depto-anho"></div>
-<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
+<footer class="imagetitle">Visualización desarrollada en D3 de Javascript<a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
 
 <div id="aspirante-modalidad-genero"></div>
-<footer class="imagetitle">Visualización desarrollada en <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
+<footer class="imagetitle">Visualización desarrollada en D3 de Javascript <a href="https://d3js.org/" target="_blank">d3.js</a> </footer>
 
 <script src="assets/js/scatterPlot.js"></script>
 <!-- <script async src="//jsfiddle.net/jamancholam/jynqzezs/embed/result,js/"></script> -->
