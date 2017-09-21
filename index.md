@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script> 
 
@@ -20,6 +21,7 @@ Fuente: [Descripción del data set](https://www.datos.gov.co/Ciencia-Tecnolog-a-
 - Se mantiene una proporción de participación aproximadamente de 55% para hombres y 45% para mujeres en todas las convocatorias, sin importar la modalidad de esta.
 - El género influye en la edad preferida para realizar estudios de alto nivel, se evidencia que las mujeres prefieren estudiar más jovenes.
 - En el caso de las investigaciones, el genero no afecta la edad promedio de los aspirantes aunque se evidencia que las mujeres tienen interés de investigar en edad más avanzada que los hombres.
+[//Relacionar cada insight con cada gráfica]
 
 ### Visualizaciones
 
