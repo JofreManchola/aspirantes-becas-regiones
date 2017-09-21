@@ -1,7 +1,7 @@
 console.clear();
-
+//Revisión por Mayra Jiménez
 var dataSet = "https://raw.githubusercontent.com/JofreManchola/aspirantes-becas-regiones/master/assets/data/ASPIRANTES_A_BECAS_DE_FORMACION%20(ASPIRANTES_A_BECAS_DE_FORMACION_DE_ALTO__NIVEL_PARA_LAS_REGIONES_2014_A_OCT_2016)_procesado.csv";
-
+//dirige al dataset utilizado 
 data = [];
 dataScatterPlot = [];
 x = {};
@@ -132,6 +132,8 @@ makeScatterPlot = function (dx) {
 /**
  * Construye el Stacked barchar para aspirante-modalidad-genero
  */
+
+//sería más fácil con un stacked horizontal identificar las cantidades en X cantidades y en Y el valor categórico, aunque como colocas las etiquetas al usar el más ayuda
 makeStackedbar = function (dx) {
     var keys = ['Masculino', 'Femenino']; // getDistinct(dx, 'modalidad', false);//
     var svg = d3.select("#aspirante-modalidad-genero").append("svg")
